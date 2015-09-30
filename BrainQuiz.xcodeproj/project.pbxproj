@@ -14,6 +14,7 @@
 		D0460E221BBC720E0064C0D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0460E201BBC720E0064C0D4 /* LaunchScreen.storyboard */; };
 		D0460E2D1BBC720E0064C0D4 /* BrainQuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0460E2C1BBC720E0064C0D4 /* BrainQuizTests.swift */; };
 		D0460E381BBC720E0064C0D4 /* BrainQuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0460E371BBC720E0064C0D4 /* BrainQuizUITests.swift */; };
+		D0460E471BBC74590064C0D4 /* tma-chalkboard.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0460E461BBC74590064C0D4 /* tma-chalkboard.jpg */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		D0460E331BBC720E0064C0D4 /* BrainQuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrainQuizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0460E371BBC720E0064C0D4 /* BrainQuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainQuizUITests.swift; sourceTree = "<group>"; };
 		D0460E391BBC720E0064C0D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0460E461BBC74590064C0D4 /* tma-chalkboard.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tma-chalkboard.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				D0460E191BBC720E0064C0D4 /* ViewController.swift */,
 				D0460E1B1BBC720E0064C0D4 /* Main.storyboard */,
 				D0460E1E1BBC720E0064C0D4 /* Assets.xcassets */,
+				D0460E451BBC74490064C0D4 /* Resources */,
 				D0460E201BBC720E0064C0D4 /* LaunchScreen.storyboard */,
 				D0460E231BBC720E0064C0D4 /* Info.plist */,
 			);
@@ -123,6 +126,14 @@
 				D0460E391BBC720E0064C0D4 /* Info.plist */,
 			);
 			path = BrainQuizUITests;
+			sourceTree = "<group>";
+		};
+		D0460E451BBC74490064C0D4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D0460E461BBC74590064C0D4 /* tma-chalkboard.jpg */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +242,7 @@
 				D0460E221BBC720E0064C0D4 /* LaunchScreen.storyboard in Resources */,
 				D0460E1F1BBC720E0064C0D4 /* Assets.xcassets in Resources */,
 				D0460E1D1BBC720E0064C0D4 /* Main.storyboard in Resources */,
+				D0460E471BBC74590064C0D4 /* tma-chalkboard.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
