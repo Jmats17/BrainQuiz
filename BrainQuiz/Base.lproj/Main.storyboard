@@ -22,8 +22,8 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BRAIN QUIZ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q1e-PF-xRD">
                                 <rect key="frame" x="140" y="28" width="320" height="90"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="O6h-6W-V0y"/>
-                                    <constraint firstAttribute="height" constant="90" id="UNq-Fd-bDV"/>
+                                    <constraint firstAttribute="width" constant="320" id="FrU-8d-kSQ"/>
+                                    <constraint firstAttribute="height" constant="90" id="JKw-31-7XM"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="46"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -32,55 +32,80 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rt4-J4-ZUt">
                                 <rect key="frame" x="147" y="275" width="307" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="307" id="nWX-Rv-Loz"/>
+                                    <constraint firstAttribute="width" constant="307" id="6fw-ps-I3t"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
                                 <state key="normal" title="play the game">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8YU-Id-59K">
-                                <rect key="frame" x="147" y="348" width="307" height="50"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
-                                <state key="normal" title="leaderboard">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q0J-2O-MKW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3d-a8-Brg">
-                                <rect key="frame" x="147" y="419" width="307" height="50"/>
+                                <rect key="frame" x="147" y="347" width="307" height="50"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
                                 <state key="normal" title="watch the videos">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="videos:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2CB-4L-D6K"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="rt4-J4-ZUt" firstAttribute="leading" secondItem="8YU-Id-59K" secondAttribute="leading" id="1pY-qY-wY1"/>
-                            <constraint firstItem="4Od-OJ-qhb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3ZQ-fl-PyF"/>
-                            <constraint firstItem="8YU-Id-59K" firstAttribute="trailing" secondItem="rt4-J4-ZUt" secondAttribute="trailing" id="KuT-wR-JXT"/>
-                            <constraint firstItem="4Od-OJ-qhb" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="LqD-Lt-2JV"/>
-                            <constraint firstAttribute="trailing" secondItem="4Od-OJ-qhb" secondAttribute="trailing" id="NhO-3P-aiX"/>
-                            <constraint firstItem="q1e-PF-xRD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="QiC-s2-11F"/>
-                            <constraint firstItem="8YU-Id-59K" firstAttribute="trailing" secondItem="x3d-a8-Brg" secondAttribute="trailing" id="U2q-G9-51s"/>
-                            <constraint firstItem="q1e-PF-xRD" firstAttribute="centerX" secondItem="rt4-J4-ZUt" secondAttribute="centerX" id="UUz-u9-B7q"/>
-                            <constraint firstItem="x3d-a8-Brg" firstAttribute="top" secondItem="8YU-Id-59K" secondAttribute="bottom" constant="21" id="Wg3-Wj-j9Y"/>
-                            <constraint firstItem="8YU-Id-59K" firstAttribute="leading" secondItem="x3d-a8-Brg" secondAttribute="leading" id="aKw-94-y9W"/>
-                            <constraint firstItem="8YU-Id-59K" firstAttribute="top" secondItem="rt4-J4-ZUt" secondAttribute="bottom" constant="23" id="hjH-IZ-Bvk"/>
-                            <constraint firstItem="x3d-a8-Brg" firstAttribute="centerX" secondItem="4Od-OJ-qhb" secondAttribute="centerX" id="rrc-2q-6vC"/>
-                            <constraint firstItem="rt4-J4-ZUt" firstAttribute="centerY" secondItem="4Od-OJ-qhb" secondAttribute="centerY" id="xLB-hF-FpZ"/>
-                            <constraint firstItem="4Od-OJ-qhb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xed-dB-03u"/>
+                            <constraint firstAttribute="trailing" secondItem="4Od-OJ-qhb" secondAttribute="trailing" id="3Fk-dr-WHS"/>
+                            <constraint firstItem="x3d-a8-Brg" firstAttribute="trailing" secondItem="rt4-J4-ZUt" secondAttribute="trailing" id="4iW-FY-qhS"/>
+                            <constraint firstItem="4Od-OJ-qhb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="EgY-xq-Yes"/>
+                            <constraint firstItem="4Od-OJ-qhb" firstAttribute="centerY" secondItem="rt4-J4-ZUt" secondAttribute="centerY" id="Pjh-k9-FhJ"/>
+                            <constraint firstItem="q1e-PF-xRD" firstAttribute="centerX" secondItem="rt4-J4-ZUt" secondAttribute="centerX" id="Rwn-H3-zTy"/>
+                            <constraint firstItem="4Od-OJ-qhb" firstAttribute="centerX" secondItem="rt4-J4-ZUt" secondAttribute="centerX" id="Z6G-Pg-L73"/>
+                            <constraint firstItem="x3d-a8-Brg" firstAttribute="leading" secondItem="rt4-J4-ZUt" secondAttribute="leading" id="eT1-qv-Lm7"/>
+                            <constraint firstItem="q1e-PF-xRD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="oJG-xz-a7x"/>
+                            <constraint firstItem="4Od-OJ-qhb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tGD-8X-OMT"/>
+                            <constraint firstItem="x3d-a8-Brg" firstAttribute="top" secondItem="rt4-J4-ZUt" secondAttribute="bottom" constant="22" id="tRM-Lm-x83"/>
+                            <constraint firstItem="4Od-OJ-qhb" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="ycU-ip-Emb"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="leaderboardButton" destination="8YU-Id-59K" id="od3-zY-JXU"/>
                         <outlet property="playButton" destination="rt4-J4-ZUt" id="ipr-gQ-kAj"/>
                         <outlet property="videoButton" destination="x3d-a8-Brg" id="Q6Z-Ej-8Mv"/>
+                        <segue destination="YYj-Vf-I8b" kind="presentation" identifier="startToQuiz" modalTransitionStyle="crossDissolve" id="vp8-hf-wlC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="305" y="387"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="05G-rl-f54">
+            <objects>
+                <viewController id="YYj-Vf-I8b" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3eA-rF-jjj"/>
+                        <viewControllerLayoutGuide type="bottom" id="dpP-8x-wFv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EJY-Uz-222">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tma-chalkboard.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="IbJ-1e-WE7">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" indicatorStyle="white" editable="NO" text="What is the thing inside your head called that is encased in your skull?" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j2v-hs-sgI">
+                                <rect key="frame" x="20" y="33" width="560" height="160"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AoF-BW-GnY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1002" y="387"/>
         </scene>
     </scenes>
     <resources>

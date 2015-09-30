@@ -8,18 +8,20 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
     
     @IBOutlet var playButton : UIButton!
     @IBOutlet var videoButton : UIButton!
-    @IBOutlet var leaderboardButton : UIButton!
+  
+    
+    
 
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         buttonProperties(playButton)
         buttonProperties(videoButton)
-        buttonProperties(leaderboardButton)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -33,7 +35,14 @@ class ViewController: UIViewController {
         button.layer.borderColor = UIColor.whiteColor().CGColor
         button.layer.cornerRadius = 5.0
     }
+    
+    @IBAction func play(sender : AnyObject) {
+        self.performSegueWithIdentifier("startToQuiz", sender: self)
+    }
 
+    @IBAction func videos(sender : AnyObject) {
+        
+    }
 
 }
 

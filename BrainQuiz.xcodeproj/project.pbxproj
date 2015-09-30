@@ -15,6 +15,18 @@
 		D0460E2D1BBC720E0064C0D4 /* BrainQuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0460E2C1BBC720E0064C0D4 /* BrainQuizTests.swift */; };
 		D0460E381BBC720E0064C0D4 /* BrainQuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0460E371BBC720E0064C0D4 /* BrainQuizUITests.swift */; };
 		D0460E471BBC74590064C0D4 /* tma-chalkboard.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0460E461BBC74590064C0D4 /* tma-chalkboard.jpg */; settings = {ASSET_TAGS = (); }; };
+		D0460E4E1BBC799F0064C0D4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0460E4D1BBC799F0064C0D4 /* AudioToolbox.framework */; };
+		D0460E501BBC79A60064C0D4 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0460E4F1BBC79A60064C0D4 /* CFNetwork.framework */; };
+		D0460E521BBC79AD0064C0D4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0460E511BBC79AD0064C0D4 /* CoreGraphics.framework */; };
+		D0460E541BBC79B30064C0D4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0460E531BBC79B30064C0D4 /* CoreLocation.framework */; };
+		D0460E561BBC79B90064C0D4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0460E551BBC79B90064C0D4 /* QuartzCore.framework */; };
+		D0460E581BBC79BE0064C0D4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0460E571BBC79BE0064C0D4 /* Security.framework */; };
+		D0460E5A1BBC79C80064C0D4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0460E591BBC79C80064C0D4 /* StoreKit.framework */; };
+		D0460E5C1BBC79D10064C0D4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0460E5B1BBC79D10064C0D4 /* SystemConfiguration.framework */; };
+		D0460E5E1BBC79DE0064C0D4 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D0460E5D1BBC79DE0064C0D4 /* libz.tbd */; };
+		D0460E601BBC79ED0064C0D4 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D0460E5F1BBC79ED0064C0D4 /* libsqlite3.0.tbd */; };
+		D0460E621BBC79FA0064C0D4 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0460E611BBC79FA0064C0D4 /* Accounts.framework */; };
+		D0460E641BBC79FE0064C0D4 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0460E631BBC79FE0064C0D4 /* Social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +61,18 @@
 		D0460E371BBC720E0064C0D4 /* BrainQuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainQuizUITests.swift; sourceTree = "<group>"; };
 		D0460E391BBC720E0064C0D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0460E461BBC74590064C0D4 /* tma-chalkboard.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tma-chalkboard.jpg"; sourceTree = "<group>"; };
+		D0460E4D1BBC799F0064C0D4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D0460E4F1BBC79A60064C0D4 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D0460E511BBC79AD0064C0D4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D0460E531BBC79B30064C0D4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D0460E551BBC79B90064C0D4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D0460E571BBC79BE0064C0D4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D0460E591BBC79C80064C0D4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		D0460E5B1BBC79D10064C0D4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D0460E5D1BBC79DE0064C0D4 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		D0460E5F1BBC79ED0064C0D4 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		D0460E611BBC79FA0064C0D4 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		D0460E631BBC79FE0064C0D4 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +80,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0460E641BBC79FE0064C0D4 /* Social.framework in Frameworks */,
+				D0460E621BBC79FA0064C0D4 /* Accounts.framework in Frameworks */,
+				D0460E601BBC79ED0064C0D4 /* libsqlite3.0.tbd in Frameworks */,
+				D0460E5E1BBC79DE0064C0D4 /* libz.tbd in Frameworks */,
+				D0460E5C1BBC79D10064C0D4 /* SystemConfiguration.framework in Frameworks */,
+				D0460E5A1BBC79C80064C0D4 /* StoreKit.framework in Frameworks */,
+				D0460E581BBC79BE0064C0D4 /* Security.framework in Frameworks */,
+				D0460E561BBC79B90064C0D4 /* QuartzCore.framework in Frameworks */,
+				D0460E541BBC79B30064C0D4 /* CoreLocation.framework in Frameworks */,
+				D0460E521BBC79AD0064C0D4 /* CoreGraphics.framework in Frameworks */,
+				D0460E501BBC79A60064C0D4 /* CFNetwork.framework in Frameworks */,
+				D0460E4E1BBC799F0064C0D4 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +142,7 @@
 				D0460E451BBC74490064C0D4 /* Resources */,
 				D0460E201BBC720E0064C0D4 /* LaunchScreen.storyboard */,
 				D0460E231BBC720E0064C0D4 /* Info.plist */,
+				D0460E481BBC79710064C0D4 /* Frameworks */,
 			);
 			path = BrainQuiz;
 			sourceTree = "<group>";
@@ -134,6 +171,25 @@
 				D0460E461BBC74590064C0D4 /* tma-chalkboard.jpg */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		D0460E481BBC79710064C0D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0460E631BBC79FE0064C0D4 /* Social.framework */,
+				D0460E611BBC79FA0064C0D4 /* Accounts.framework */,
+				D0460E5F1BBC79ED0064C0D4 /* libsqlite3.0.tbd */,
+				D0460E5D1BBC79DE0064C0D4 /* libz.tbd */,
+				D0460E5B1BBC79D10064C0D4 /* SystemConfiguration.framework */,
+				D0460E591BBC79C80064C0D4 /* StoreKit.framework */,
+				D0460E571BBC79BE0064C0D4 /* Security.framework */,
+				D0460E551BBC79B90064C0D4 /* QuartzCore.framework */,
+				D0460E531BBC79B30064C0D4 /* CoreLocation.framework */,
+				D0460E511BBC79AD0064C0D4 /* CoreGraphics.framework */,
+				D0460E4F1BBC79A60064C0D4 /* CFNetwork.framework */,
+				D0460E4D1BBC799F0064C0D4 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +254,7 @@
 		D0460E0C1BBC720D0064C0D4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Justin Matsnev";
 				TargetAttributes = {
@@ -410,10 +467,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BrainQuiz",
+				);
 				INFOPLIST_FILE = BrainQuiz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.justinmatsnev.BrainQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -421,10 +485,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BrainQuiz",
+				);
 				INFOPLIST_FILE = BrainQuiz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.justinmatsnev.BrainQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
