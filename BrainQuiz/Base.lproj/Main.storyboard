@@ -79,10 +79,10 @@
             </objects>
             <point key="canvasLocation" x="305" y="387"/>
         </scene>
-        <!--View Controller-->
+        <!--QuizViewController-->
         <scene sceneID="05G-rl-f54">
             <objects>
-                <viewController id="YYj-Vf-I8b" sceneMemberID="viewController">
+                <viewController title="QuizViewController" id="YYj-Vf-I8b" customClass="QuizViewController" customModule="BrainQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3eA-rF-jjj"/>
                         <viewControllerLayoutGuide type="bottom" id="dpP-8x-wFv"/>
@@ -94,117 +94,43 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tma-chalkboard.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="IbJ-1e-WE7">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbE-UY-vRZ">
-                                <rect key="frame" x="84" y="285" width="496" height="71"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
-                                <state key="normal" title="Heart">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2f-eJ-xRl">
-                                <rect key="frame" x="84" y="364" width="496" height="71"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
-                                <state key="normal" title="Brian">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wWM-rF-cww">
-                                <rect key="frame" x="84" y="443" width="496" height="71"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
-                                <state key="normal" title="Toe">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3C-z7-rGb">
-                                <rect key="frame" x="84" y="521" width="496" height="71"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
-                                <state key="normal" title="Brain">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgl-2Q-iKD">
-                                <rect key="frame" x="20" y="285" width="42" height="71"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="71" id="JeP-bQ-T41"/>
-                                    <constraint firstAttribute="width" constant="42" id="M6b-Xm-RhA"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="24"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jE-uA-hof">
-                                <rect key="frame" x="20" y="364" width="42" height="71"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="71" id="0wB-Eb-dvm"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="24"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jWg-db-Gc3">
-                                <rect key="frame" x="20" y="443" width="42" height="71"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="71" id="SbL-ad-KZY"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="24"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAT-Gt-F7I">
-                                <rect key="frame" x="20" y="521" width="42" height="71"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="71" id="TwE-zV-esq"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="24"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" indicatorStyle="white" editable="NO" text="What is the thing inside your head called that is encased in your skull?" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j2v-hs-sgI">
                                 <rect key="frame" x="20" y="84" width="560" height="160"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter your answer" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="JMM-nS-aaw">
+                                <rect key="frame" x="0.0" y="328" width="600" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="Zvx-Fm-veU"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="23"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="send" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="YYj-Vf-I8b" id="slC-EL-4IQ"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="IbJ-1e-WE7" firstAttribute="leading" secondItem="EJY-Uz-222" secondAttribute="leading" id="1a6-Ri-vcS"/>
-                            <constraint firstItem="b3C-z7-rGb" firstAttribute="leading" secondItem="wWM-rF-cww" secondAttribute="leading" id="27T-oe-8ip"/>
-                            <constraint firstItem="dAT-Gt-F7I" firstAttribute="top" secondItem="jWg-db-Gc3" secondAttribute="bottom" constant="7" id="27f-3E-hTe"/>
-                            <constraint firstItem="kbE-UY-vRZ" firstAttribute="leading" secondItem="tgl-2Q-iKD" secondAttribute="trailing" constant="22" id="2sO-UX-YyA"/>
-                            <constraint firstItem="IbJ-1e-WE7" firstAttribute="centerX" secondItem="j2v-hs-sgI" secondAttribute="centerX" id="41Z-TZ-89Y"/>
-                            <constraint firstItem="j2v-hs-sgI" firstAttribute="top" secondItem="3eA-rF-jjj" secondAttribute="bottom" constant="64" id="57Z-nW-mYW"/>
-                            <constraint firstItem="tgl-2Q-iKD" firstAttribute="top" secondItem="j2v-hs-sgI" secondAttribute="bottom" constant="41" id="BGL-tM-RPc"/>
-                            <constraint firstItem="wWM-rF-cww" firstAttribute="top" secondItem="y2f-eJ-xRl" secondAttribute="bottom" constant="8" symbolic="YES" id="BwP-qE-cO1"/>
-                            <constraint firstItem="dAT-Gt-F7I" firstAttribute="top" secondItem="b3C-z7-rGb" secondAttribute="top" id="J4M-ZF-B7e"/>
-                            <constraint firstItem="IbJ-1e-WE7" firstAttribute="bottom" secondItem="dpP-8x-wFv" secondAttribute="top" id="KDh-QR-Ov4"/>
-                            <constraint firstItem="dAT-Gt-F7I" firstAttribute="leading" secondItem="jWg-db-Gc3" secondAttribute="leading" id="LAa-Zk-aWu"/>
-                            <constraint firstItem="jWg-db-Gc3" firstAttribute="top" secondItem="5jE-uA-hof" secondAttribute="bottom" constant="8" symbolic="YES" id="LYH-i9-GiZ"/>
-                            <constraint firstItem="IbJ-1e-WE7" firstAttribute="top" secondItem="EJY-Uz-222" secondAttribute="top" id="M45-Uu-e0W"/>
-                            <constraint firstItem="kbE-UY-vRZ" firstAttribute="trailing" secondItem="y2f-eJ-xRl" secondAttribute="trailing" id="MPt-nB-rCG"/>
-                            <constraint firstItem="j2v-hs-sgI" firstAttribute="leading" secondItem="tgl-2Q-iKD" secondAttribute="leading" id="MnJ-cM-ZFh"/>
-                            <constraint firstItem="dpP-8x-wFv" firstAttribute="top" secondItem="b3C-z7-rGb" secondAttribute="bottom" constant="8" symbolic="YES" id="NLP-bs-Pbf"/>
-                            <constraint firstItem="dpP-8x-wFv" firstAttribute="top" secondItem="dAT-Gt-F7I" secondAttribute="bottom" constant="8" symbolic="YES" id="O4Z-l5-tMj"/>
-                            <constraint firstItem="kbE-UY-vRZ" firstAttribute="trailing" secondItem="j2v-hs-sgI" secondAttribute="trailing" id="O9M-Qj-TwR"/>
-                            <constraint firstItem="5jE-uA-hof" firstAttribute="leading" secondItem="tgl-2Q-iKD" secondAttribute="leading" id="RTK-jx-M9P"/>
-                            <constraint firstItem="wWM-rF-cww" firstAttribute="trailing" secondItem="y2f-eJ-xRl" secondAttribute="trailing" id="RnE-U0-pCw"/>
-                            <constraint firstItem="jWg-db-Gc3" firstAttribute="bottom" secondItem="wWM-rF-cww" secondAttribute="bottom" id="T96-XA-5oq"/>
-                            <constraint firstItem="tgl-2Q-iKD" firstAttribute="trailing" secondItem="5jE-uA-hof" secondAttribute="trailing" id="Uue-hx-JFU"/>
-                            <constraint firstItem="y2f-eJ-xRl" firstAttribute="top" secondItem="5jE-uA-hof" secondAttribute="top" id="W4e-Us-MvK"/>
-                            <constraint firstItem="y2f-eJ-xRl" firstAttribute="leading" secondItem="kbE-UY-vRZ" secondAttribute="leading" id="WhV-9t-Nta"/>
-                            <constraint firstItem="5jE-uA-hof" firstAttribute="top" secondItem="tgl-2Q-iKD" secondAttribute="bottom" constant="8" symbolic="YES" id="g3o-d6-9Q7"/>
-                            <constraint firstItem="y2f-eJ-xRl" firstAttribute="top" secondItem="kbE-UY-vRZ" secondAttribute="bottom" constant="8" symbolic="YES" id="hqh-88-snb"/>
-                            <constraint firstItem="wWM-rF-cww" firstAttribute="leading" secondItem="y2f-eJ-xRl" secondAttribute="leading" id="iVm-c9-7jL"/>
-                            <constraint firstItem="jWg-db-Gc3" firstAttribute="leading" secondItem="5jE-uA-hof" secondAttribute="leading" id="j72-3P-EOT"/>
-                            <constraint firstItem="jWg-db-Gc3" firstAttribute="trailing" secondItem="dAT-Gt-F7I" secondAttribute="trailing" id="nnK-Bg-Ui0"/>
-                            <constraint firstItem="jWg-db-Gc3" firstAttribute="top" secondItem="wWM-rF-cww" secondAttribute="top" id="orL-L5-3ri"/>
-                            <constraint firstItem="b3C-z7-rGb" firstAttribute="trailing" secondItem="wWM-rF-cww" secondAttribute="trailing" id="paJ-mt-GHD"/>
-                            <constraint firstItem="jWg-db-Gc3" firstAttribute="trailing" secondItem="5jE-uA-hof" secondAttribute="trailing" id="qYx-SB-06M"/>
-                            <constraint firstItem="jWg-db-Gc3" firstAttribute="leading" secondItem="EJY-Uz-222" secondAttribute="leadingMargin" id="sHj-tR-eHG"/>
-                            <constraint firstAttribute="trailing" secondItem="IbJ-1e-WE7" secondAttribute="trailing" id="uhb-g9-tkK"/>
-                            <constraint firstItem="tgl-2Q-iKD" firstAttribute="top" secondItem="kbE-UY-vRZ" secondAttribute="top" id="w8k-fJ-yof"/>
+                            <constraint firstItem="dpP-8x-wFv" firstAttribute="top" secondItem="JMM-nS-aaw" secondAttribute="bottom" constant="218" id="20T-Q5-vCY"/>
+                            <constraint firstItem="IbJ-1e-WE7" firstAttribute="bottom" secondItem="dpP-8x-wFv" secondAttribute="top" id="8KX-Bg-ybg"/>
+                            <constraint firstAttribute="trailing" secondItem="JMM-nS-aaw" secondAttribute="trailing" id="8cD-rT-Dht"/>
+                            <constraint firstItem="j2v-hs-sgI" firstAttribute="leading" secondItem="EJY-Uz-222" secondAttribute="leadingMargin" id="EPm-20-tOS"/>
+                            <constraint firstItem="IbJ-1e-WE7" firstAttribute="leading" secondItem="JMM-nS-aaw" secondAttribute="leading" id="IdX-8e-XMw"/>
+                            <constraint firstItem="IbJ-1e-WE7" firstAttribute="leading" secondItem="EJY-Uz-222" secondAttribute="leading" id="Ook-nq-kOf"/>
+                            <constraint firstItem="j2v-hs-sgI" firstAttribute="top" secondItem="3eA-rF-jjj" secondAttribute="bottom" constant="64" id="P6k-NS-9Vd"/>
+                            <constraint firstItem="j2v-hs-sgI" firstAttribute="centerX" secondItem="JMM-nS-aaw" secondAttribute="centerX" id="cC5-M5-Ump"/>
+                            <constraint firstItem="JMM-nS-aaw" firstAttribute="trailing" secondItem="IbJ-1e-WE7" secondAttribute="trailing" id="e4i-RP-9Hv"/>
+                            <constraint firstItem="JMM-nS-aaw" firstAttribute="top" secondItem="j2v-hs-sgI" secondAttribute="bottom" constant="84" id="hf3-Mb-jyr"/>
+                            <constraint firstItem="IbJ-1e-WE7" firstAttribute="top" secondItem="EJY-Uz-222" secondAttribute="top" id="lmO-fR-EsM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="answerField" destination="JMM-nS-aaw" id="LOh-R8-sAv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AoF-BW-GnY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet var playButton : UIButton!
     @IBOutlet var videoButton : UIButton!
   
-    
+    // get request for quiz shit -- https://api.quizlet.com/2.0/sets/95583670/terms?client_id=Szf5zdUGnc&whitespace=1
     
 
     

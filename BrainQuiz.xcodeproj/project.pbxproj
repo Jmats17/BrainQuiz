@@ -27,6 +27,8 @@
 		D0460E601BBC79ED0064C0D4 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D0460E5F1BBC79ED0064C0D4 /* libsqlite3.0.tbd */; };
 		D0460E621BBC79FA0064C0D4 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0460E611BBC79FA0064C0D4 /* Accounts.framework */; };
 		D0460E641BBC79FE0064C0D4 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0460E631BBC79FE0064C0D4 /* Social.framework */; };
+		D0460E691BBCCAB00064C0D4 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0460E681BBCCAB00064C0D4 /* SwiftyJSON.swift */; settings = {ASSET_TAGS = (); }; };
+		D0460E6B1BBCCAF70064C0D4 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0460E6A1BBCCAF70064C0D4 /* QuizViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		D0460E5F1BBC79ED0064C0D4 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		D0460E611BBC79FA0064C0D4 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		D0460E631BBC79FE0064C0D4 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		D0460E681BBCCAB00064C0D4 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		D0460E6A1BBCCAF70064C0D4 /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,8 @@
 			children = (
 				D0460E171BBC720E0064C0D4 /* AppDelegate.swift */,
 				D0460E191BBC720E0064C0D4 /* ViewController.swift */,
+				D0460E681BBCCAB00064C0D4 /* SwiftyJSON.swift */,
+				D0460E6A1BBCCAF70064C0D4 /* QuizViewController.swift */,
 				D0460E1B1BBC720E0064C0D4 /* Main.storyboard */,
 				D0460E1E1BBC720E0064C0D4 /* Assets.xcassets */,
 				D0460E451BBC74490064C0D4 /* Resources */,
@@ -324,8 +330,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0460E691BBCCAB00064C0D4 /* SwiftyJSON.swift in Sources */,
 				D0460E1A1BBC720E0064C0D4 /* ViewController.swift in Sources */,
 				D0460E181BBC720E0064C0D4 /* AppDelegate.swift in Sources */,
+				D0460E6B1BBCCAF70064C0D4 /* QuizViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
