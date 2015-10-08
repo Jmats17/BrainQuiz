@@ -29,6 +29,8 @@
 		D0460E641BBC79FE0064C0D4 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0460E631BBC79FE0064C0D4 /* Social.framework */; };
 		D0460E691BBCCAB00064C0D4 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0460E681BBCCAB00064C0D4 /* SwiftyJSON.swift */; settings = {ASSET_TAGS = (); }; };
 		D0460E6B1BBCCAF70064C0D4 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0460E6A1BBCCAF70064C0D4 /* QuizViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D0D903581BC5CA7F0066BBD8 /* right-arrow2.png in Resources */ = {isa = PBXBuildFile; fileRef = D0D903571BC5CA7F0066BBD8 /* right-arrow2.png */; settings = {ASSET_TAGS = (); }; };
+		D0D9035C1BC600EA0066BBD8 /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D9035B1BC600EA0066BBD8 /* EndViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,10 @@
 		D0460E631BBC79FE0064C0D4 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		D0460E681BBCCAB00064C0D4 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		D0460E6A1BBCCAF70064C0D4 /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		D0D903571BC5CA7F0066BBD8 /* right-arrow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right-arrow2.png"; sourceTree = "<group>"; };
+		D0D903591BC5EB730066BBD8 /* wrong.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wrong.m4a; sourceTree = "<group>"; };
+		D0D9035A1BC5EB730066BBD8 /* correct.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = correct.m4a; sourceTree = "<group>"; };
+		D0D9035B1BC600EA0066BBD8 /* EndViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +149,7 @@
 				D0460E191BBC720E0064C0D4 /* ViewController.swift */,
 				D0460E681BBCCAB00064C0D4 /* SwiftyJSON.swift */,
 				D0460E6A1BBCCAF70064C0D4 /* QuizViewController.swift */,
+				D0D9035B1BC600EA0066BBD8 /* EndViewController.swift */,
 				D0460E1B1BBC720E0064C0D4 /* Main.storyboard */,
 				D0460E1E1BBC720E0064C0D4 /* Assets.xcassets */,
 				D0460E451BBC74490064C0D4 /* Resources */,
@@ -174,7 +181,10 @@
 		D0460E451BBC74490064C0D4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D0D903571BC5CA7F0066BBD8 /* right-arrow2.png */,
 				D0460E461BBC74590064C0D4 /* tma-chalkboard.jpg */,
+				D0D903591BC5EB730066BBD8 /* wrong.m4a */,
+				D0D9035A1BC5EB730066BBD8 /* correct.m4a */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -306,6 +316,7 @@
 				D0460E1F1BBC720E0064C0D4 /* Assets.xcassets in Resources */,
 				D0460E1D1BBC720E0064C0D4 /* Main.storyboard in Resources */,
 				D0460E471BBC74590064C0D4 /* tma-chalkboard.jpg in Resources */,
+				D0D903581BC5CA7F0066BBD8 /* right-arrow2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0460E691BBCCAB00064C0D4 /* SwiftyJSON.swift in Sources */,
+				D0D9035C1BC600EA0066BBD8 /* EndViewController.swift in Sources */,
 				D0460E1A1BBC720E0064C0D4 /* ViewController.swift in Sources */,
 				D0460E181BBC720E0064C0D4 /* AppDelegate.swift in Sources */,
 				D0460E6B1BBCCAF70064C0D4 /* QuizViewController.swift in Sources */,
@@ -481,6 +493,7 @@
 					"$(PROJECT_DIR)/BrainQuiz",
 				);
 				INFOPLIST_FILE = BrainQuiz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.justinmatsnev.BrainQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -499,6 +512,7 @@
 					"$(PROJECT_DIR)/BrainQuiz",
 				);
 				INFOPLIST_FILE = BrainQuiz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.justinmatsnev.BrainQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -573,6 +587,7 @@
 				D0460E3E1BBC720E0064C0D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D0460E3F1BBC720E0064C0D4 /* Build configuration list for PBXNativeTarget "BrainQuizTests" */ = {
 			isa = XCConfigurationList;
@@ -581,6 +596,7 @@
 				D0460E411BBC720E0064C0D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D0460E421BBC720E0064C0D4 /* Build configuration list for PBXNativeTarget "BrainQuizUITests" */ = {
 			isa = XCConfigurationList;
@@ -589,6 +605,7 @@
 				D0460E441BBC720E0064C0D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
