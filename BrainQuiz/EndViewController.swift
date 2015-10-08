@@ -25,7 +25,7 @@ class EndViewController: UIViewController {
     }
     
     @IBAction func restart(sender : AnyObject) {
-    
+        self.performSegueWithIdentifier("endToQuiz", sender: self)
     }
     
 }

@@ -44,35 +44,21 @@
                                     <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q0J-2O-MKW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3d-a8-Brg">
-                                <rect key="frame" x="147" y="347" width="307" height="50"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
-                                <state key="normal" title="watch the videos">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="videos:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2CB-4L-D6K"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="4Od-OJ-qhb" secondAttribute="trailing" id="3Fk-dr-WHS"/>
-                            <constraint firstItem="x3d-a8-Brg" firstAttribute="trailing" secondItem="rt4-J4-ZUt" secondAttribute="trailing" id="4iW-FY-qhS"/>
                             <constraint firstItem="4Od-OJ-qhb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="EgY-xq-Yes"/>
                             <constraint firstItem="4Od-OJ-qhb" firstAttribute="centerY" secondItem="rt4-J4-ZUt" secondAttribute="centerY" id="Pjh-k9-FhJ"/>
                             <constraint firstItem="q1e-PF-xRD" firstAttribute="centerX" secondItem="rt4-J4-ZUt" secondAttribute="centerX" id="Rwn-H3-zTy"/>
                             <constraint firstItem="4Od-OJ-qhb" firstAttribute="centerX" secondItem="rt4-J4-ZUt" secondAttribute="centerX" id="Z6G-Pg-L73"/>
-                            <constraint firstItem="x3d-a8-Brg" firstAttribute="leading" secondItem="rt4-J4-ZUt" secondAttribute="leading" id="eT1-qv-Lm7"/>
                             <constraint firstItem="q1e-PF-xRD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="oJG-xz-a7x"/>
                             <constraint firstItem="4Od-OJ-qhb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tGD-8X-OMT"/>
-                            <constraint firstItem="x3d-a8-Brg" firstAttribute="top" secondItem="rt4-J4-ZUt" secondAttribute="bottom" constant="22" id="tRM-Lm-x83"/>
                             <constraint firstItem="4Od-OJ-qhb" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="ycU-ip-Emb"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="playButton" destination="rt4-J4-ZUt" id="ipr-gQ-kAj"/>
-                        <outlet property="videoButton" destination="x3d-a8-Brg" id="Q6Z-Ej-8Mv"/>
                         <segue destination="YYj-Vf-I8b" kind="presentation" identifier="startToQuiz" modalTransitionStyle="crossDissolve" id="vp8-hf-wlC"/>
                     </connections>
                 </viewController>
@@ -198,6 +184,7 @@
                         <outlet property="answerField" destination="JMM-nS-aaw" id="LOh-R8-sAv"/>
                         <outlet property="correctIncorrect" destination="Em7-Us-90G" id="qpv-k5-0UQ"/>
                         <outlet property="correctIncorrectField" destination="JLI-36-7Dr" id="JUw-NW-KyB"/>
+                        <outlet property="pointEarnedLabel" destination="Hi6-DF-MUk" id="Fg6-X4-LXz"/>
                         <outlet property="points" destination="DPQ-LH-2UJ" id="IRX-xQ-qdk"/>
                         <outlet property="questionField" destination="j2v-hs-sgI" id="QpH-hq-fkW"/>
                         <outlet property="startButton" destination="AaQ-AW-V0R" id="k83-AD-jJ6"/>
@@ -225,9 +212,6 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HIGHSCORE:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWX-jK-2Xg">
                                 <rect key="frame" x="157" y="193" width="287" height="89"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="89" id="lEY-8o-Hxh"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="31"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -235,7 +219,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWS-G2-7Kv">
                                 <rect key="frame" x="227" y="290" width="147" height="58"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="58" id="EIb-O7-9dz"/>
+                                    <constraint firstAttribute="height" constant="58" id="zHQ-iz-4du"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="39"/>
                                 <color key="textColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -244,8 +228,8 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Score:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0tj-A0-o8f">
                                 <rect key="frame" x="157" y="28" width="287" height="89"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="89" id="KAJ-iR-jeI"/>
-                                    <constraint firstAttribute="width" constant="287" id="c73-f9-1Zt"/>
+                                    <constraint firstAttribute="width" constant="287" id="JKl-dv-ueX"/>
+                                    <constraint firstAttribute="height" constant="89" id="gnw-ai-gHr"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="31"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -254,24 +238,30 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6rb-MR-UDR">
                                 <rect key="frame" x="227" y="125" width="147" height="58"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="147" id="PPQ-6Q-yjF"/>
-                                    <constraint firstAttribute="height" constant="58" id="hBd-9o-SOl"/>
+                                    <constraint firstAttribute="height" constant="58" id="3wZ-1f-2OS"/>
+                                    <constraint firstAttribute="width" constant="147" id="HVc-Lp-Mdp"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="39"/>
                                 <color key="textColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGT-MR-voI">
-                                <rect key="frame" x="178" y="411" width="245" height="101"/>
+                                <rect key="frame" x="178" y="440" width="245" height="72"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="101" id="Zf1-wy-uZ6"/>
-                                    <constraint firstAttribute="width" constant="245" id="sMi-hT-DVs"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="72" id="SQs-4C-16m"/>
+                                    <constraint firstAttribute="width" constant="245" id="Wbr-15-e2e"/>
+                                    <constraint firstAttribute="height" constant="72" id="sSQ-Et-Jkl"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="38"/>
                                 <state key="normal" title="Try Again?">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="SQs-4C-16m"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="restart:" destination="Z8x-Bh-C6y" eventType="touchUpInside" id="qDT-Yj-RUm"/>
                                 </connections>
@@ -279,29 +269,30 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="YKe-gh-n77" firstAttribute="top" secondItem="2bk-OJ-C1n" secondAttribute="top" id="3z8-UX-MzT"/>
-                            <constraint firstItem="aWX-jK-2Xg" firstAttribute="leading" secondItem="0tj-A0-o8f" secondAttribute="leading" id="5HR-qO-yzU"/>
-                            <constraint firstItem="nC9-l4-FXj" firstAttribute="top" secondItem="RGT-MR-voI" secondAttribute="bottom" constant="88" id="5eW-Bn-cpM"/>
-                            <constraint firstItem="6rb-MR-UDR" firstAttribute="leading" secondItem="cWS-G2-7Kv" secondAttribute="leading" id="EZL-ag-JgN"/>
-                            <constraint firstItem="cWS-G2-7Kv" firstAttribute="top" secondItem="aWX-jK-2Xg" secondAttribute="bottom" constant="8" symbolic="YES" id="IN6-Tm-eBd"/>
-                            <constraint firstItem="6rb-MR-UDR" firstAttribute="trailing" secondItem="cWS-G2-7Kv" secondAttribute="trailing" id="QCM-hB-iA8"/>
-                            <constraint firstItem="RGT-MR-voI" firstAttribute="top" secondItem="cWS-G2-7Kv" secondAttribute="bottom" constant="63" id="Vcc-kd-nIV"/>
-                            <constraint firstItem="0tj-A0-o8f" firstAttribute="top" secondItem="C8O-5F-dq4" secondAttribute="bottom" constant="8" symbolic="YES" id="Z0S-qQ-VQA"/>
-                            <constraint firstItem="YKe-gh-n77" firstAttribute="leading" secondItem="2bk-OJ-C1n" secondAttribute="leading" id="agF-iR-3Xd"/>
-                            <constraint firstItem="YKe-gh-n77" firstAttribute="bottom" secondItem="nC9-l4-FXj" secondAttribute="top" id="cGB-0E-UIY"/>
-                            <constraint firstItem="aWX-jK-2Xg" firstAttribute="trailing" secondItem="0tj-A0-o8f" secondAttribute="trailing" id="cHc-mU-upA"/>
-                            <constraint firstItem="RGT-MR-voI" firstAttribute="centerX" secondItem="cWS-G2-7Kv" secondAttribute="centerX" id="gHZ-pO-YoU"/>
-                            <constraint firstItem="aWX-jK-2Xg" firstAttribute="top" secondItem="6rb-MR-UDR" secondAttribute="bottom" constant="10" id="i7x-o1-zN1"/>
-                            <constraint firstItem="YKe-gh-n77" firstAttribute="centerX" secondItem="RGT-MR-voI" secondAttribute="centerX" id="j2R-Jh-rx0"/>
-                            <constraint firstItem="6rb-MR-UDR" firstAttribute="top" secondItem="0tj-A0-o8f" secondAttribute="bottom" constant="8" symbolic="YES" id="qF0-Qu-3KW"/>
-                            <constraint firstItem="0tj-A0-o8f" firstAttribute="centerX" secondItem="6rb-MR-UDR" secondAttribute="centerX" id="whc-HU-Yhm"/>
-                            <constraint firstAttribute="trailing" secondItem="YKe-gh-n77" secondAttribute="trailing" id="yT4-zR-m7B"/>
+                            <constraint firstItem="aWX-jK-2Xg" firstAttribute="centerX" secondItem="YKe-gh-n77" secondAttribute="centerX" id="4LX-x1-39B"/>
+                            <constraint firstItem="6rb-MR-UDR" firstAttribute="trailing" secondItem="cWS-G2-7Kv" secondAttribute="trailing" id="5oo-4o-Kxc"/>
+                            <constraint firstItem="nC9-l4-FXj" firstAttribute="top" secondItem="RGT-MR-voI" secondAttribute="bottom" constant="88" id="EKp-wv-ePs"/>
+                            <constraint firstItem="RGT-MR-voI" firstAttribute="centerX" secondItem="cWS-G2-7Kv" secondAttribute="centerX" id="FD9-2u-Z2S"/>
+                            <constraint firstItem="RGT-MR-voI" firstAttribute="top" secondItem="cWS-G2-7Kv" secondAttribute="bottom" constant="92" id="Hma-YE-ddE"/>
+                            <constraint firstItem="aWX-jK-2Xg" firstAttribute="top" secondItem="6rb-MR-UDR" secondAttribute="bottom" constant="10" id="IQW-y7-L6f"/>
+                            <constraint firstItem="YKe-gh-n77" firstAttribute="top" secondItem="2bk-OJ-C1n" secondAttribute="top" id="K80-Uv-vAe"/>
+                            <constraint firstItem="YKe-gh-n77" firstAttribute="bottom" secondItem="nC9-l4-FXj" secondAttribute="top" id="KxA-Oo-us9"/>
+                            <constraint firstItem="aWX-jK-2Xg" firstAttribute="leading" secondItem="0tj-A0-o8f" secondAttribute="leading" id="RW2-TG-raN"/>
+                            <constraint firstAttribute="trailing" secondItem="YKe-gh-n77" secondAttribute="trailing" id="TGs-rr-O6B"/>
+                            <constraint firstItem="YKe-gh-n77" firstAttribute="leading" secondItem="2bk-OJ-C1n" secondAttribute="leading" id="fCH-Qr-EoX"/>
+                            <constraint firstItem="0tj-A0-o8f" firstAttribute="top" secondItem="C8O-5F-dq4" secondAttribute="bottom" constant="8" symbolic="YES" id="iMJ-R0-6xM"/>
+                            <constraint firstItem="0tj-A0-o8f" firstAttribute="trailing" secondItem="aWX-jK-2Xg" secondAttribute="trailing" id="jHG-k9-PgM"/>
+                            <constraint firstItem="cWS-G2-7Kv" firstAttribute="top" secondItem="aWX-jK-2Xg" secondAttribute="bottom" constant="8" symbolic="YES" id="kwP-UC-Whq"/>
+                            <constraint firstItem="6rb-MR-UDR" firstAttribute="centerX" secondItem="0tj-A0-o8f" secondAttribute="centerX" id="s3A-Vf-6hq"/>
+                            <constraint firstItem="cWS-G2-7Kv" firstAttribute="leading" secondItem="6rb-MR-UDR" secondAttribute="leading" id="tl0-8p-dvp"/>
+                            <constraint firstItem="6rb-MR-UDR" firstAttribute="top" secondItem="0tj-A0-o8f" secondAttribute="bottom" constant="8" symbolic="YES" id="vhK-Be-v8N"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="button" destination="RGT-MR-voI" id="Ooh-15-ybT"/>
                         <outlet property="highScoreLabel" destination="cWS-G2-7Kv" id="Nh9-cJ-xhq"/>
                         <outlet property="myScoreLabel" destination="6rb-MR-UDR" id="CH2-uk-Fae"/>
+                        <segue destination="YYj-Vf-I8b" kind="presentation" identifier="endToQuiz" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="wXF-6c-yMC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xww-5E-pAP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -312,4 +303,7 @@
     <resources>
         <image name="tma-chalkboard.jpg" width="1269" height="948"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="vp8-hf-wlC"/>
+    </inferredMetricsTieBreakers>
 </document>

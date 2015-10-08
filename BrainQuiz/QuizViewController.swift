@@ -17,6 +17,7 @@ class QuizViewController : UIViewController, UITextFieldDelegate {
     @IBOutlet var correctIncorrect : UILabel!
     @IBOutlet var correctIncorrectField : UILabel!
     @IBOutlet var points : UILabel!
+    @IBOutlet var pointEarnedLabel : UILabel!
     var pointsNum : Int = 0
     var newDict : Dictionary = [String:String]()
     var sound = AVAudioPlayer()
@@ -34,6 +35,7 @@ class QuizViewController : UIViewController, UITextFieldDelegate {
         correctIncorrectField.hidden = true
         correctIncorrect.hidden = true
         questionField.hidden = true
+        pointEarnedLabel.hidden = true
         textFieldShouldReturn(answerField)
         
     }
@@ -42,7 +44,7 @@ class QuizViewController : UIViewController, UITextFieldDelegate {
         answerField.hidden = false
         questionField.hidden = false
         startButton.hidden = true
-
+        pointEarnedLabel.hidden = false
         let index: Int = Int(arc4random_uniform(UInt32(vocabDict.count)))
         let key = Array(vocabDict.keys)[index]
         let value = vocabDict[key]!
