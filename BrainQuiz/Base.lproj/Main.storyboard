@@ -201,16 +201,17 @@
                         <outlet property="points" destination="DPQ-LH-2UJ" id="IRX-xQ-qdk"/>
                         <outlet property="questionField" destination="j2v-hs-sgI" id="QpH-hq-fkW"/>
                         <outlet property="startButton" destination="AaQ-AW-V0R" id="k83-AD-jJ6"/>
+                        <segue destination="Z8x-Bh-C6y" kind="presentation" identifier="quizToEnd" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="rgz-le-IjO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AoF-BW-GnY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1002" y="387"/>
         </scene>
-        <!--View Controller-->
+        <!--End View Controller-->
         <scene sceneID="bNj-mA-ZZc">
             <objects>
-                <viewController id="Z8x-Bh-C6y" sceneMemberID="viewController">
+                <viewController id="Z8x-Bh-C6y" customClass="EndViewController" customModule="BrainQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="C8O-5F-dq4"/>
                         <viewControllerLayoutGuide type="bottom" id="nC9-l4-FXj"/>
@@ -270,6 +271,9 @@
                                 <state key="normal" title="Try Again?">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="restart:" destination="Z8x-Bh-C6y" eventType="touchUpInside" id="qDT-Yj-RUm"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -293,6 +297,11 @@
                             <constraint firstAttribute="trailing" secondItem="YKe-gh-n77" secondAttribute="trailing" id="yT4-zR-m7B"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="RGT-MR-voI" id="Ooh-15-ybT"/>
+                        <outlet property="highScoreLabel" destination="cWS-G2-7Kv" id="Nh9-cJ-xhq"/>
+                        <outlet property="myScoreLabel" destination="6rb-MR-UDR" id="CH2-uk-Fae"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xww-5E-pAP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

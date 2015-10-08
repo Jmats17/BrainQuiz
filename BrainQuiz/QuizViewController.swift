@@ -79,7 +79,19 @@ class QuizViewController : UIViewController, UITextFieldDelegate {
             self.newDict[key] = value
             self.vocabDict.removeValueForKey(key)
             if self.vocabDict.count == 0 {
-                
+                self.defaults.setObject(self.pointsNum, forKey: "myScore")
+                self.defaults.synchronize()
+                let highScore = self.defaults.valueForKey("highscore")
+                if highScore == nil {
+                    self.defaults.setObject(self.pointsNum, forKey: "highscore")
+                }
+                else if self.pointsNum > (highScore as! Int) {
+                    self.defaults.setObject(self.pointsNum, forKey: "highscore")
+                }
+                else {
+                    
+                }
+                self.performSegueWithIdentifier("quizToEnd", sender: self)
             }
             print(self.vocabDict.count)
             print(self.newDict.count)
