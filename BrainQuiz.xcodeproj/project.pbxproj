@@ -31,6 +31,8 @@
 		D0460E6B1BBCCAF70064C0D4 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0460E6A1BBCCAF70064C0D4 /* QuizViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D0D903581BC5CA7F0066BBD8 /* right-arrow2.png in Resources */ = {isa = PBXBuildFile; fileRef = D0D903571BC5CA7F0066BBD8 /* right-arrow2.png */; settings = {ASSET_TAGS = (); }; };
 		D0D9035C1BC600EA0066BBD8 /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D9035B1BC600EA0066BBD8 /* EndViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D0D9035D1BC605540066BBD8 /* correct.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D0D9035A1BC5EB730066BBD8 /* correct.m4a */; };
+		D0D9035E1BC608940066BBD8 /* wrong.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D0D903591BC5EB730066BBD8 /* wrong.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -312,6 +314,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0D9035E1BC608940066BBD8 /* wrong.m4a in Resources */,
+				D0D9035D1BC605540066BBD8 /* correct.m4a in Resources */,
 				D0460E221BBC720E0064C0D4 /* LaunchScreen.storyboard in Resources */,
 				D0460E1F1BBC720E0064C0D4 /* Assets.xcassets in Resources */,
 				D0460E1D1BBC720E0064C0D4 /* Main.storyboard in Resources */,
